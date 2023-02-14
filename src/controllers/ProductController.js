@@ -1,109 +1,136 @@
 const ProductManager = require('./../helpers/ProductManager')
 let info = {}
 
-
+//helper function to get all products
 const getAllProductsFromServer = async () => {
-    
+    const products = new ProductManager('./src/datastorage/testP.json')
+    const listProducts = await products.getAllProducts()
+    let info = {}
+
+    if(listProducts === false || (Array.isArray(listProducts) && listProducts.length === 0)){
+        info = {
+            status: "error",
+            length: 0,
+            message: "could not get the products, empty or non-existent file.",
+            data: []
+        }
+        return info
+    }
+
+    const length = listProducts.length
+
+    info = {
+        status: "success",
+        length: length,
+        message: "products returned successfully",
+        data: listProducts
+    }
+
+    return info
 }
 
-const getNProductsFromServer = async () => {
-    
+//helper function to get a number of products
+const getNProductsFromServer = async (limit) => {
+    const products = new ProductManager('./src/datastorage/testP.json')
+    const listProducts = await products.getProducts(limit)
+    let info = {}
+
+    if(listProducts === false || (Array.isArray(listProducts) && listProducts.length === 0)){
+        info = {
+            status: "error",
+            length: 0,
+            message: "could not get the products, empty or non-existent file.",
+            data: []
+        }
+        return info
+    }
+
+    const length = listProducts.length
+
+    info = {
+        status: length === limit ? "success" : "partial",
+        length: length,
+        message: length === limit ? "products returned successfully" : "Not all the requested products were available.",
+        data: listProducts
+    }
+    return info
 }
 
 // Get all or N products from server /api/products[?:limit=N]
 const getProductsFromServer = async (req, res) => {
     let arrayQuery = Object.keys(req.query)
 
-    if(!(arrayQuery.length > 0)){
-        const products = new ProductManager()
-        const listProducts = await products.getAllProducts()
-
-        if(Array.isArray(listProducts)){
-            const length = listProducts.length
-
-            if(length > 0){
-                info = {
-                    status: "success",
-                    data: listProducts,
-                    length: length,
-                    message: "products returned successfully"
-                }
-                return res.status(400).json(info)
-            }
-
-            info ={
-                status: "error",
-                data: [],
-                length: 0,
-                message: "no products"
-            }
-            return res.status(400).json(info)
-        }
+    if (!(arrayQuery.length > 0)) {
+        let info = await getAllProductsFromServer()
+        return res.status(200).json(info)
     }
 
-    if(arrayQuery.length > 0){
-        if(!arrayQuery.includes('limit') || arrayQuery.length > 1 ){
-            info = { 
-                status: "error",
-                message: "query with syntax error",
-                data: [],
-                length: 0
-            }
-            return res.status(400).json(info)
+    if (!arrayQuery.includes('limit') || arrayQuery.length > 1) {
+        info = {
+            status: "error",
+            length: 0,
+            message: "query with syntax error",
+            data: []
         }
-
-        let {limit} = req.query
-        limit = parseInt(limit)
-
-        if(!isNaN(limit) && limit > 0){
-            const products = new ProductManager()
-            
-            const listProducts = await products.getProducts(limit)
-
-            if(Array.isArray(listProducts)){
-                const length = listProducts.length
-
-                if(length > 0){
-                    info = {
-                        status: length === limit ? "success" : "partial",
-                        data: listProducts,
-                        length: length,
-                        message: length === limit? "products returned successfully" : "Not all the requested products were available."
-                    }
-                    return res.status(400).json(info)
-                }
-
-                info ={
-                    status: "error",
-                    data: [],
-                    length: 0,
-                    message: "no products"
-                }
-                return res.status(400).json(info)
-            }
-
-            info = { 
-                status: "error",
-                data: [],
-                length: 0,
-                message: "the argument of limit is not a positive integer",
-                
-            }
-            return res.status(200).json(info)
-        }
+        return res.status(400).json(info)
     }
 
-    
+    let { limit } = req.query
+    limit = parseInt(limit)
 
+    if (!isNaN(limit) && limit > 0) {
+        let info = await getNProductsFromServer(limit)
+        return res.status(200).json(info)       
+    }
+
+    info = {
+        status: "error",
+        length: 0,
+        message: "limit value is not a positive integer",
+        data: []
+    }
+    return res.status(400).json(info)
 }
 
 // Get a product from server /api/products/:pid 
 const getProductFromServer = async (req, res) => {
-    res.send('GET one of /products')
+    let { pid } = req.params
+    pid = parseInt(pid)
+    let info = {}
+    
+    if(isNaN(pid)){
+        console.log(pid)
+        info = {
+            status: "error",
+            message: "the product id is not a correct number",
+            data: {}
+        }
+        return res.status(400).json(info)
+    }
+
+    const products = new ProductManager('./src/datastorage/testP.json')
+    const product = await products.getProductById(pid)
+
+    if(product === undefined || product === false){
+        info = {
+            status: "error",
+            message: "a product with that id does not exist or the file could not be read",
+            data: {}
+        }
+        return res.status(400).json(info)
+    }
+
+    info = {
+        status: "success",
+        message: "product found successfully",
+        data: product
+    }
+    return res.status(200).json(info)
 }
 
 // Add a product to the server
 const addProductOnServer = async (req, res) => {
+    
     res.send('POST one of /products')
 }
 
@@ -117,4 +144,4 @@ const delProductOnServer = async (req, res) => {
     res.send('PUT one of /products')
 }
 
-module.exports = {getProductsFromServer, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer}
+module.exports = { getProductsFromServer, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer }
