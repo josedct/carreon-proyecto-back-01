@@ -1,9 +1,10 @@
 const ProductManager = require('./../helpers/ProductManager')
+const path = './src/datastorage/products.json'
 let info = {}
 
 //helper function to get all products
 const getAllProductsFromServer = async () => {
-    const products = new ProductManager('./src/datastorage/testP.json')
+    const products = new ProductManager(path)
     const listProducts = await products.getAllProducts()
     let info = {}
 
@@ -31,7 +32,7 @@ const getAllProductsFromServer = async () => {
 
 //helper function to get a number of products
 const getNProductsFromServer = async (limit) => {
-    const products = new ProductManager('./src/datastorage/testP.json')
+    const products = new ProductManager(path)
     const listProducts = await products.getProducts(limit)
     let info = {}
 
@@ -98,8 +99,9 @@ const getProductFromServer = async (req, res) => {
     pid = parseInt(pid)
     let info = {}
     
-    if(isNaN(pid)){
-        console.log(pid)
+    pid = isNaN(pid) ? undefined : pid
+
+    if(pid === undefined){
         info = {
             status: "error",
             message: "the product id is not a correct number",
@@ -108,7 +110,7 @@ const getProductFromServer = async (req, res) => {
         return res.status(400).json(info)
     }
 
-    const products = new ProductManager('./src/datastorage/testP.json')
+    const products = new ProductManager(path)
     const product = await products.getProductById(pid)
 
     if(product === undefined || product === false){
@@ -131,7 +133,7 @@ const getProductFromServer = async (req, res) => {
 // Add a product to the server
 const addProductOnServer = async (req, res) => {
     const data = req.body
-    const products = new ProductManager('./src/datastorage/testP.json')
+    const products = new ProductManager(path)
     const isAdd = await products.addProduct(data)
     let info = {}
 
@@ -168,7 +170,7 @@ const updProductOnServer = async (req, res) => {
         return res.status(400).json(info)
     }
     
-    const products = new ProductManager('./src/datastorage/testP.json')
+    const products = new ProductManager(path)
     const isUpdated = await products.updateProductById(pid, data)
 
     if(isUpdated === false || (Array.isArray(isUpdated) && isUpdated.length === 0)){
@@ -205,7 +207,7 @@ const delProductOnServer = async (req, res) => {
         return res.status(400).json(info)
     }
 
-    const products = new ProductManager('./src/datastorage/testP.json')
+    const products = new ProductManager(path)
     const isDeleted = await products.deleteProductById(pid)
 
     if(isDeleted === false){
