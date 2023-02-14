@@ -130,18 +130,97 @@ const getProductFromServer = async (req, res) => {
 
 // Add a product to the server
 const addProductOnServer = async (req, res) => {
+    const data = req.body
+    const products = new ProductManager('./src/datastorage/testP.json')
+    const isAdd = await products.addProduct(data)
+    let info = {}
+
+    if(isAdd){
+       info ={
+        status: "successs",
+        message: "product added successfully."
+       }
+       return res.status(200).json(info)
+    }
     
-    res.send('POST one of /products')
-}
+    info ={
+        status: "error",
+        message: "the product could not be added check the data sent."
+       }
+    return res.status(200).json(info)
+}    
 
 // Update a product to the server
 const updProductOnServer = async (req, res) => {
-    res.send('PUT one of /products')
+    let {pid} = req.params
+    const data = req.body
+    let info = {}
+    
+    pid = parseInt(pid)
+    pid = isNaN(pid) ? undefined : pid 
+
+    if(pid === undefined || data === undefined){
+        info ={
+            status: "error",
+            message: "verify that id or data, does not exist or is invalid",
+            updated: []
+        }
+        return res.status(400).json(info)
+    }
+    
+    const products = new ProductManager('./src/datastorage/testP.json')
+    const isUpdated = await products.updateProductById(pid, data)
+
+    if(isUpdated === false || (Array.isArray(isUpdated) && isUpdated.length === 0)){
+        info ={
+            status: "error",
+            message: "could not update, id does not exist, or did not need to update.",
+            updated: []
+        }
+        return res.status(400).json(info)
+    }
+
+    info ={
+        status: "success",
+        message: "updated information correctly.",
+        updated: isUpdated
+    }
+    return res.status(200).json(info)
+
 }
 
 // Delete a product to the server
 const delProductOnServer = async (req, res) => {
-    res.send('PUT one of /products')
+    let {pid} = req.params
+    let info = {}
+    
+    pid = parseInt(pid)
+    pid = isNaN(pid) ? undefined : pid
+    
+    if(pid === undefined){
+        info ={
+            status: "error",
+            message: "verify that id, is invalid."
+        }
+        return res.status(400).json(info)
+    }
+
+    const products = new ProductManager('./src/datastorage/testP.json')
+    const isDeleted = await products.deleteProductById(pid)
+
+    if(isDeleted === false){
+        info ={
+            status: "error",
+            message: "could not delete, id does not exist."
+        }
+        return res.status(400).json(info)
+    }
+
+    info ={
+        status: "success",
+        message: `product id ${pid} removed successfully.`
+    }
+    return res.status(200).json(info)
 }
 
 module.exports = { getProductsFromServer, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer }
