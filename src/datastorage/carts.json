@@ -896,6 +896,10 @@
             {
                 "product": 92,
                 "quantity": 8
+            },
+            {
+                "product": 2,
+                "quantity": 2
             }
         ]
     },
@@ -4501,6 +4505,26 @@
     },
     {
         "id": 101,
+        "products": []
+    },
+    {
+        "id": 102,
+        "products": []
+    },
+    {
+        "id": 103,
+        "products": []
+    },
+    {
+        "id": 104,
+        "products": []
+    },
+    {
+        "id": 105,
+        "products": []
+    },
+    {
+        "id": 106,
         "products": []
     }
 ]

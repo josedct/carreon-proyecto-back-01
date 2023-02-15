@@ -54,14 +54,14 @@ const addCartOnServer = async (req, res) => {
             status: "success",
             message: "cart created and added successfully."
         }
-        res.status(200).json(info)
+        return res.status(200).json(info)
     }
 
     info = {
         status: "error",
         message: "could not create cart."
     }
-    res.status(400).json(info)
+    return res.status(400).json(info)
 }
 
 // add or update an existing product to an existing cart on the server
