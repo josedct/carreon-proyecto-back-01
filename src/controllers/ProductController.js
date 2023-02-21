@@ -93,6 +93,15 @@ const getProductsFromServer = async (req, res) => {
     return res.status(400).json(info)
 }
 
+const getViewAllProduct = async (req, res) => {
+    let info = await getAllProductsFromServer()
+    const products = info.data
+    console.log("productos:")
+    console.log(products)
+    res.render('home', {products})
+}
+
+
 // Get a product from server /api/products/:pid 
 const getProductFromServer = async (req, res) => {
     let { pid } = req.params
@@ -225,4 +234,4 @@ const delProductOnServer = async (req, res) => {
     return res.status(200).json(info)
 }
 
-module.exports = { getProductsFromServer, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer }
+module.exports = { getProductsFromServer, getViewAllProduct, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer }

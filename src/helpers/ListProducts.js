@@ -52,7 +52,7 @@ class ListProducts{
             description,
             code,
             price,
-            status,
+            status : true,
             stock,
             category,
             thumbnails
