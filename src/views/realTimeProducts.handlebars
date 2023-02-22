@@ -1,0 +1,53 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col d-flex justify-content-center p-4">
+            <h1 class="text-uppercase" id="titleList">list of products [{{length}}]</h1>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped vh-100">
+            <thead class="table-dark d-table" style="table-layout: fixed; width: calc( 100% - 1em );">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Stock</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider d-block h-75 overflow-y-scroll" id="contentList">
+                {{#each listProducts}} 
+                <tr class="d-table w-100" style="table-layout: fixed;">
+                    <th scope="row"><span class="badge bg-secondary"> {{this.id}}</span></th>
+                    <th>
+                        {{#if this.thumbnails}} 
+                            <img src="{{this.thumbnails.[0]}}" class="card-img-top h-25" alt="...">
+                        {{else}}
+                            <img src="img/image-not-avalible.jpg" class="card-img-top h-25" alt="">
+                        {{/if}}
+                    </th>
+                    <th class="text-break">{{this.title}}</th>
+                    <th class="text-break">{{this.description}}</th>
+                    <th class="text-break">{{this.category}}</th>
+                    <th>{{this.code}}</th>
+                    <th>{{this.price}}</th>
+                    <th>
+                        {{#if this.status}}
+                            available
+                        {{else}}
+                            unavailable
+                        {{/if}}
+                    </th>
+                    <th>{{this.stock}}</th>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/realTime.js"></script>

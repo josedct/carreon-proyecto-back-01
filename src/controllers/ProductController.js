@@ -93,14 +93,20 @@ const getProductsFromServer = async (req, res) => {
     return res.status(400).json(info)
 }
 
+//Get all products for view handlebars
 const getViewAllProduct = async (req, res) => {
     let info = await getAllProductsFromServer()
     const products = info.data
-    console.log("productos:")
-    console.log(products)
-    res.render('home', {products})
+    res.render('home', {products, title:'List of products'})
 }
 
+//Get all products for view realtime
+const getRealTimeAllProducts = async (req, res) => {
+    let info = await getAllProductsFromServer()
+    const listProducts = info.data
+    const length = info.length
+    res.render('realTimeProducts',{listProducts,length, title: 'Products real time'})
+}
 
 // Get a product from server /api/products/:pid 
 const getProductFromServer = async (req, res) => {
@@ -145,12 +151,16 @@ const addProductOnServer = async (req, res) => {
     const products = new ProductManager(path)
     const isAdd = await products.addProduct(data)
     let info = {}
+    const socketPost = res.app.get('socketio')
 
     if(isAdd){
        info ={
         status: "successs",
         message: "product added successfully."
        }
+       const listProducts = await products.getAllProducts()
+       const length = listProducts.length
+       socketPost.emit('client:updateProducts',{listProducts, length})
        return res.status(200).json(info)
     }
     
@@ -159,6 +169,9 @@ const addProductOnServer = async (req, res) => {
         message: "the product could not be added check the data sent."
        }
     return res.status(200).json(info)
+
+    
+    
 }    
 
 // Update a product to the server
@@ -181,6 +194,7 @@ const updProductOnServer = async (req, res) => {
     
     const products = new ProductManager(path)
     const isUpdated = await products.updateProductById(pid, data)
+    const socketUpdate = res.app.get('socketio')
 
     if(isUpdated === false || (Array.isArray(isUpdated) && isUpdated.length === 0)){
         info ={
@@ -196,6 +210,11 @@ const updProductOnServer = async (req, res) => {
         message: "updated information correctly.",
         updated: isUpdated
     }
+
+    const listProducts = await products.getAllProducts()
+    const length = listProducts.length
+    socketUpdate.emit('client:updateProducts',{listProducts, length})
+
     return res.status(200).json(info)
 
 }
@@ -218,6 +237,7 @@ const delProductOnServer = async (req, res) => {
 
     const products = new ProductManager(path)
     const isDeleted = await products.deleteProductById(pid)
+    const socketDelete = res.app.get('socketio')
 
     if(isDeleted === false){
         info ={
@@ -231,7 +251,12 @@ const delProductOnServer = async (req, res) => {
         status: "success",
         message: `product id ${pid} removed successfully.`
     }
+
+    const listProducts = await products.getAllProducts()
+    const length = listProducts.length
+    socketDelete.emit('client:updateProducts',{listProducts, length})
+
     return res.status(200).json(info)
 }
 
-module.exports = { getProductsFromServer, getViewAllProduct, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer }
+module.exports = { getProductsFromServer, getViewAllProduct, getRealTimeAllProducts, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer }

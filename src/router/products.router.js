@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { getProductsFromServer,getViewAllProduct, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer } = require('./../controllers/ProductController')
+const { getProductsFromServer,getViewAllProduct, getRealTimeAllProducts, getProductFromServer, addProductOnServer, updProductOnServer, delProductOnServer } = require('./../controllers/ProductController')
 
 const router = Router()
 
@@ -8,6 +8,9 @@ router.get('/', getProductsFromServer )
 
 //GET /api/products/home
 router.get('/home',getViewAllProduct)
+
+//GET /api/products/realtimeproducts
+router.get('/realtimeproducts',getRealTimeAllProducts)
 
 // GET 	/api/products/:pid  
 router.get('/:pid', getProductFromServer )

@@ -1,7 +1,12 @@
-<div class="container text-center">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-start">
+<div class="container p-4">
+    <div class="row">
+        <div class="col d-flex justify-content-center p-4">
+            <h1 class="text-uppercase">list of products</h1>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
         {{#each products}}
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <div class="card h-100" style="width: 18rem;">
                     
                     {{#if this.thumbnails}} 
@@ -9,23 +14,20 @@
                     {{else}}
                         <img src="img/image-not-avalible.jpg" class="card-img-top h-25" alt="">
                     {{/if}}
-
-                    <div class="card-body">
-                        <h5 class="card-title"><span class="badge bg-secondary"> {{this.id}}</span> {{this.title}} </h5>
-                        <p class="card-text">{{this.description}}</p>
-                    </div>
                     
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">category: {{this.category}}</li>
-                        <li class="list-group-item">code: {{this.code}}</li>
-                        <li class="list-group-item">price: {{this.price}}</li>
-                        <li class="list-group-item">status:{{this.status}}</li>
-                        <li class="list-group-item">stock: {{this.stock}}</li>
+                        <li class="list-group-item"> <h3 class="card-title"><span class="badge bg-secondary"> {{this.id}}</span> {{this.title}} </h3> </li>
+                        <li class="list-group-item"> <span class="text-uppercase fw-bold">description:</span>  {{this.description}}</li>
+                        <li class="list-group-item"> <span class="text-uppercase fw-bold">category:</span>  {{this.category}}</li>
+                        <li class="list-group-item"> <span class="text-uppercase fw-bold">code:</span>  {{this.code}}</li>
+                        <li class="list-group-item"> <span class="text-uppercase fw-bold">price:</span>  {{this.price}}</li>
+                        {{#if this.status}}
+                            <li class="list-group-item"> <span class="text-uppercase fw-bold">status:</span> available</li>
+                        {{else}}
+                            <li class="list-group-item"> <span class="text-uppercase fw-bold">status:</span> unavailable</li>
+                        {{/if}}
+                        <li class="list-group-item"> <span class="text-uppercase fw-bold">stock:</span>  {{this.stock}}</li>
                     </ul>
-
-                    <div class="card-footer">
-                        <small class="text-muted">product displays</small>
-                    </div>
 
                 </div>
             </div>
