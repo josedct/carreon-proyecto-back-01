@@ -1,0 +1,21 @@
+<div class="container vh-100 p-4">
+    <div class="container rounded-3 h-100 d-flex flex-column align-items-start p-0">
+        <div class="bg-success col-12 p-2 rounded-top">
+            <h3 class="text-uppercase text-white">whatchat <span class="fw-bold" id="user">@user</span> </h3>
+        </div>
+        <div class="bg-secondary-subtle h-75 col-12 overflow-y-auto d-flex flex-column align-self-stretch" id="textArea">
+            
+        </div>
+        <div class="col-12 bg-danger-subtle rounded-bottom">
+            <form class="row">
+                <div class="input-group my-3 px-4">
+                    <input type="text" class="col-10 form-control" id="message" placeholder="Message">
+                    <button class="col-2 btn btn-secondary" type="button" id="send">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/clientchat.js"></script>

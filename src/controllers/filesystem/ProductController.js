@@ -1,5 +1,5 @@
-const ProductManager = require('./../helpers/ProductManager')
-const path = './src/datastorage/products.json'
+const ProductManager = require('../../dao/filesystem/helpers/ProductManager') //../dao/filesystem/helpers/ProductManager
+const path = './src/dao/filesystem/datastorage/products.json'
 let info = {}
 
 //helper function to get all products

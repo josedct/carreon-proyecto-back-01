@@ -1,0 +1,776 @@
+[
+    {
+		"id": 1,
+		"title": "Frozen II",
+		"description": "Continúan las aventuras de las hermanas de Arendelle. Elsa y Anna, junto a Kristoff, el reno Sven y el muñeco de nieve Olaf, regresan en esta segunda parte de la película de animación de Disney Frozen: El reino del hielo",
+		"code": "843HTT",
+		"price": 345.0,
+		"status": true,
+		"stock": 256,
+		"category": "Infantiles",
+		"thumbnails": [
+			"https://i.ibb.co/TbJ8T9K/01-frozenii.jpg",
+			"https://i.ibb.co/cXks3cy/02-frozenii.jpg"
+		]
+	},
+	{
+		"id": 2,
+		"title": "Superman: El Hombre del Mañana",
+		"description": "Clark Kent, el nuevo reportero pasante del Daily Planet, es en secreto el nuevo superhéroe de Metrópolis que lucha por el bien, Superman. Sin embargo, mientras comienza a descubrir sus poderes y responsabilidades, nuevos retos se asoman en el horizonte",
+		"code": "550FWM",
+		"price": 285.0,
+		"status": true,
+		"stock": 369,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/NSs4Tp3/1101216299-1p.jpg",
+			"https://i.ibb.co/41VysX1/1101216299-1.jpg",
+			"https://i.ibb.co/x3G4r4T/1101216299.jpg"
+		]
+	},
+	{
+		"id": 3,
+		"title": "Guasón",
+		"description": "La pasión de Arthur Fleck, un hombre ignorado por la sociedad, es hacer reír a la gente, sin embargo, una serie de trágicos sucesos harán que su visión del mundo se distorsione considerablemente convirtiéndolo en un brillante criminal",
+		"code": "525SXA",
+		"price": 345.0,
+		"status": true,
+		"stock": 258,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/WF76mJP/1092755157-1p.jpg",
+			"https://i.ibb.co/bR7TtvD/1092755157.jpg"
+		]
+	},
+	{
+		"id": 4,
+		"title": "Uno De Nosotros",
+		"description": "Luego de la muerte de su hijo, un jubilado alguacil y su esposa abandonan su rancho en montana para salvar a su nieto. El niño está en Dakota bajo la custodia de la poderosa familia Weboy, pues su madre se ha casado con otro hombre, pero la matriarca Weboy, al descubrir sus intenciones, hará todo lo posible para detenerlos",
+		"code": "724LCY",
+		"price": 285.0,
+		"status": true,
+		"stock": 456,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/VDGMv8R/1105832334-1p.jpg",
+			"https://i.ibb.co/x37vGfH/1105832334.jpg"
+		]
+	},
+	{
+		"id": 5,
+		"title": "Space Jam: Una Nueva Era",
+		"description": "La superestrella de la NBA LeBron James se une a Bugs Bunny y el resto de los Looney Tunes para esta secuela tan esperada",
+		"code": "585MLG",
+		"price": 210.0,
+		"status": true,
+		"stock": 125,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/PN0VV02/1111343655-2p-jpg.jpg",
+			"https://i.ibb.co/cg4gnTD/1111343655-1p.jpg",
+			"https://i.ibb.co/cktWKKS/1111343655.jpg"
+		]
+	},
+	{
+		"id": 6,
+		"title": "Shazam!",
+		"description": "Todos llevamos un superhéroe en nuestro interior. Solo es preciso un poco de magia para sacarlo. Es lo que le ocurre a Billy Batson (Asher Angel), un joven huérfano de 14 años, normal y corriente, al que le cambia la vida un encuentro con un viejo hechicero",
+		"code": "800IOW",
+		"price": 285.0,
+		"status": true,
+		"stock": 255,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/s2p0D22/1084877138-1p.jpg",
+			"https://i.ibb.co/0nY0nTh/1084877138.jpg"
+		]
+	},
+	{
+		"id": 7,
+		"title": "Maléfica: Dueña del Mal",
+		"description": "Maléfica y su ahijada Aurora comienzan a cuestionar los complejos lazos familiares que las unen, mientras son presionadas en diferentes direcciones por una boda inminente, aliados inesperados y nuevas fuerzas oscuras que entran en juego",
+		"code": "070TLQ",
+		"price": 240.0,
+		"status": true,
+		"stock": 456,
+		"category": "Familiar",
+		"thumbnails": [
+			"https://i.ibb.co/s5GqNWg/1092986477-1p.jpg",
+			"https://i.ibb.co/djr8dP5/1092986477.jpg"
+		]
+	},
+	{
+		"id": 8,
+		"title": "Unidos",
+		"description": "Ambientada en un mundo de fantasía suburbano, dos hermanos elfos adolescentes se embarcan en una aventura para descubrir si aún hay magia allá afuera",
+		"code": "227HKL",
+		"price": 240.0,
+		"status": true,
+		"stock": 289,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/jR5XB7B/1097230419-1p.jpg",
+			"https://i.ibb.co/rbjFgMv/1097230419.jpg"
+		]
+	},
+	{
+		"id": 9,
+		"title": "The Infinity Saga",
+		"description": "La Saga del Infinito: Edición para coleccionistas, conformada por 23 películas del universo cinematográfico de Marvel: Iron Man (2008), Hulk: El Hombre Increíble (2008), Iron Man 2 (2010), Thor (2011), Capitán América: El primer vengador (2011), The Avengers: Los Vengadores (2012), Iron Man 3 (2013), Thor: Un Mundo Oscuro (2013), Capitán América y el Soldado del Invierno (2014), Guardianes de la Galaxia (2014), Avengers: Era de Ultrón (2015), Ant- Man (2015), Capitán América: Civil War (2016), Doctor Strange (2016), Guardianes de la Galaxia Vol. 2 (2017), Spider- Man: de Regreso a Casa (2017), Thor: Ragnarok (2017), Black Panther (2018), Avengers: Infinity War (2018) y Ant-man and The Wasp (2018), Capitana Marvel (2019) y Avengers: Endgame (2019) y Spider-Man: Lejos de Casa (2019)",
+		"code": "838GOY",
+		"price": 2799.0,
+		"status": true,
+		"stock": 136,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/j5GP705/1100074725-2p.jpg",
+			"https://i.ibb.co/f4dnJSw/1100074725-1p.jpg",
+			"https://i.ibb.co/6nfr8V6/1100074725.jpg"
+		]
+	},
+	{
+		"id": 10,
+		"title": "Animales fantásticos: Los secretos de Dumbledore",
+		"description": "El profesor Albus Dumbledore (Jude Law) sabe que el poderoso mago oscuro Gellert Grindelwald (Mads Mikkelsen) se moviliza para tomar control del mundo mágico. Incapaz de detenerlo por sí solo, le encomienda al magizoólogo Newt Scamander (Eddie Redmayne) liderar a un intrépido equipo de magos, brujas y hasta un valiente panadero muggle para embarcarse en una peligrosa misión, durante la cual se encuentran con nuevas y conocidas bestias, además de enfrentarse con la creciente legión de seguidores de Grindelwald",
+		"code": "866REL",
+		"price": 285.0,
+		"status": true,
+		"stock": 248,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/t8G7S2G/1124629370-20p.jpg",
+			"https://i.ibb.co/HGrBRNJ/1124629370-1p.jpg",
+			"https://i.ibb.co/C8q00PH/1124629370.jpg"
+		]
+	},
+	{
+		"id": 11,
+		"title": "Ambulancia",
+		"description": "El condecorado veterano Will Sharp está desesperado por conseguir dinero para cubrir las deudas médicas de su esposa, le pide ayuda a la única persona que sabe que no debería-su hermano adoptivo Danny. Un carismático criminal, Danny en cambio le ofrece un gran golpe: el mayor atraco a un banco en la historia de Los Ángeles: $32 millones. Con su esposa entre la vida y la muerte, Will no puede decir que no",
+		"code": "458IUZ",
+		"price": 285.0,
+		"status": true,
+		"stock": 125,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/yPnCws0/1122197898-2p.jpg",
+			"https://i.ibb.co/0X4TS6C/1122197898-1p.jpg",
+			"https://i.ibb.co/TWb68yK/1122197898.jpg"
+		]
+	},
+	{
+		"id": 12,
+		"title": "La Vida Secreta de tus Mascotas 2",
+		"description": "2 mini películas, escenas eliminadas, un tapiz de cola, cuadro por cuadro, características de los personajes, escuela de entrenamiento",
+		"code": "835MTV",
+		"price": 2045.0,
+		"status": true,
+		"stock": 145,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/d4qNJ3t/1091967452-1p.jpg",
+			"https://i.ibb.co/HTbkgPH/1091967452.jpg"
+		]
+	},
+	{
+		"id": 13,
+		"title": "Colección especial: Toy Story",
+		"description": "Paquete de colección especial con todos los títulos de Toy Story: Toy Story, Toy Story 2, Toy Story 3 y el lanzamiento del 2019 Toy Story 4",
+		"code": "828XBZ",
+		"price": 640.0,
+		"status": true,
+		"stock": 356,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/kmT8Dsn/1087686163-1p.jpg",
+			"https://i.ibb.co/dc50P84/1087686163.jpg"
+		]
+	},
+	{
+		"id": 14,
+		"title": "Scream 5",
+		"description": "Una nueva entrega de la saga de terror 'Scream' que seguirá a una mujer que regresa a su ciudad natal para intentar descubrir quién ha estado cometiendo una serie de crímenes atroces",
+		"code": "949OOD",
+		"price": 290.0,
+		"status": true,
+		"stock": 456,
+		"category": "Horror",
+		"thumbnails": [
+			"https://i.ibb.co/rkhnC3P/1119976266-20p.jpg",
+			"https://i.ibb.co/prJVhjN/1119976266-1p.jpg",
+			"https://i.ibb.co/zrGL5M4/1119976266.jpg"
+		]
+	},
+	{
+		"id": 15,
+		"title": "Avengers Endgame",
+		"description": "Después de los eventos devastadores de Avengers: Infinity War, el universo está en ruinas debido a las acciones de Thanos. Con la ayuda de los aliados que quedaron, los Vengadores deben reunirse una vez más para deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias",
+		"code": "988ZTE",
+		"price": 292.0,
+		"status": true,
+		"stock": 247,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/vmtnbhR/1085569623-1p.jpg",
+			"https://i.ibb.co/vBznj3z/1085569623.jpg"
+		]
+	},
+	{
+		"id": 16,
+		"title": 1917,
+		"description": "Sam Mendes, el director ganador de un Oscar por Skyfall Spectre y belleza americana, aporta su visión singular a esta epopeya de la primera guerra mundial. En el apogeo de la guerra, dos jóvenes soldados británicos, Schofield (el capitán fantástico George Mackay) y Blake (Dean-Charles Chapman de juego de tronos), reciben una misión aparentemente imposible. En una carrera contra el tiempo, deben cruzar el territorio enemigo y entregar un mensaje que detendrá un ataque mortal contra cientos de soldados, el hermano de Blake entre ellos",
+		"code": "253SBZ",
+		"price": 305.0,
+		"status": true,
+		"stock": 589,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/5cJF6XN/1098503516-1p.jpg",
+			"https://i.ibb.co/VCCm0zn/1098503516.jpg"
+		]
+	},
+	{
+		"id": 17,
+		"title": "Rápidos y Furiosos 9",
+		"description": "Dom Toretto vive una vida tranquila junto a Letty y su hijo, pero el peligro siempre regresa a su vida. En esta ocasión, el equipo se enfrenta a un complot mundial orquestado por el asesino más temible del mundo: el hermano de Dom",
+		"code": "037JHC",
+		"price": 285.0,
+		"status": true,
+		"stock": 256,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/yWz9FBK/1111344589-2p.jpg",
+			"https://i.ibb.co/QHhy5Vp/1111344589-1p.jpg",
+			"https://i.ibb.co/gDK8dP2/1111344589.jpg"
+		]
+	},
+	{
+		"id": 18,
+		"title": "Godzilla vs. Kong",
+		"description": "¿Quién ganará? Un choque entre leyendas se da cuando Godzilla y Kong, las dos fuerzas más poderosas de la naturaleza, se enfrentan en una batalla espectacular que pasará a la historia. Monarch se embarca en una peligrosa misión por un fantástico terreno inexplorado para desenterrar pistas sobre los orígenes de los titanes. Mientras tanto, una conspiración humana amenaza con aniquilar a las criaturas, buenas y malas de la faz de la Tierra para siempre",
+		"code": "766NKP",
+		"price": 284.0,
+		"status": true,
+		"stock": 598,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/DWdS5Xs/1109212829-2p.jpg",
+			"https://i.ibb.co/51hcDYP/1109212829-1p.jpg",
+			"https://i.ibb.co/9tC84SB/1109212829.jpg"
+		]
+	},
+	{
+		"id": 19,
+		"title": "Colección Frozen",
+		"description": "Paquete de colección que incluye Frozen: Una ventura congelada y Frozen II en formatos DVD y Blu-ray",
+		"code": "695UNE",
+		"price": 542.0,
+		"status": true,
+		"stock": 256,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/vq1RQNc/1094205898-1p.jpg",
+			"https://i.ibb.co/nfrtqks/1094205898.jpg"
+		]
+	},
+	{
+		"id": 20,
+		"title": "Nadie",
+		"description": "Un hombre común, que ha decepcionado a su familia luego de no poder defenderlos en una noche de asalto, es empujado más allá de sus límites en Nadie. El personaje de Bob Odenkirk es un espectador que interviene para ayudar a una mujer que es acosada por un grupo de hombres, solo para descubrir más tarde que uno de los hombres que ingresó en el hospital es el hermano de un capo de la droga. Ahora, el hombre se ha convertido en el objetivo de un vengativo narcotraficante. El guion del largometraje está escrito por Derek Kolstad, quien también fungió como guionista de John Wick",
+		"code": "303GZK",
+		"price": 285.0,
+		"status": true,
+		"stock": 489,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/Cvcjx2h/1108191909-2p.jpg",
+			"https://i.ibb.co/TWTfQ0B/1108191909-1p.jpg",
+			"https://i.ibb.co/RbMrnBJ/1108191909.jpg"
+		]
+	},
+	{
+		"id": 21,
+		"title": "Un Lugar En Silencio Parte 1 y 2",
+		"description": "PARTE 1: En el año 2020, unas criaturas misteriosas con un sentido auditivo extraordinario han diezmado a la población mundial. Una familia se oculta en una cabaña y se comunica mediante la lengua de signos para no ser cazados por estos monstruos. PARTE 2: La familia Abbott ahora se enfrenta a los terrores del mundo exterior. Forzados a aventurarse en lo desconocido, se dan cuenta de que las criaturas que cazan por el sonido no son las únicas amenazas que acechan más allá del camino de arena",
+		"code": "427ZJQ",
+		"price": 377.0,
+		"status": true,
+		"stock": 456,
+		"category": "Suspenso",
+		"thumbnails": [
+			"https://i.ibb.co/4Tg2zyY/1111344538-2p-jpg.jpg",
+			"https://i.ibb.co/nLqL9QN/1111344538-1p.jpg",
+			"https://i.ibb.co/DQZv3dF/1111344538.jpg"
+		]
+	},
+	{
+		"id": 22,
+		"title": "Sonic 2 la películ",
+		"description": "Después de establecerse en Green Hills, Sonic está ansioso por demostrar que tiene lo que se necesita para ser un verdadero héroe. Su prueba llega cuando el Dr. Robotnik regresa a buscar una esmeralda que tiene el poder de destruir civilizaciones, esta vez con un nuevo aliado, Knuckles. Sonic se une a su propio compañero, Tails, y juntos se embarcan en un viaje alrededor del mundo para encontrar la esmeralda antes de que caiga en las manos equivocadas. De los realizadores detrás de Rápido y Furioso y Deadpool, Sonic 2 La Película está protagonizada por Luisito Comunica como la voz de Sonic, además James Marsden, Tika Sumpter, Natasha Rothwell, Adam Pally y Jim Carrey regresan para esta entrega",
+		"code": "464ZLV",
+		"price": 285.0,
+		"status": true,
+		"stock": 259,
+		"category": "Aventura",
+		"thumbnails": [
+			"https://i.ibb.co/0ZfKL9r/1124629345-1p.jpg",
+			"https://i.ibb.co/DpM32Tn/1124629345.jpg"
+		]
+	},
+	{
+		"id": 23,
+		"title": "Space Jam + Space Jam: Una Nueva Era",
+		"description": "En un intento desesperado por ganar un partido de baloncesto y ganar su libertad, los Looney Tunes buscan la ayuda del campeón retirado de baloncesto, Michael Jordan. La superestrella de la NBA LeBron James se une a Bugs Bunny y el resto de los Looney Tunes para esta secuela tan esperada",
+		"code": "621ICI",
+		"price": 377.0,
+		"status": true,
+		"stock": 365,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/KF6cvym/1111464657-2p-jpg.jpg",
+			"https://i.ibb.co/bgX9Sx5/1111464657-1p.jpg",
+			"https://i.ibb.co/LCX6jvw/1111464657.jpg"
+		]
+	},
+	{
+		"id": 24,
+		"title": "Cry Macho",
+		"description": "De Warner Bros. Pictures llega “Cry Macho”, el conmovedor e inspirador drama del director y productor Clint Eastwood. La película es protagonizada por Eastwood como Mike Milo, una exestrella de rodeo y criador de caballos venido a menos, quien, en 1979, acepta un trabajo con su exjefe que consiste en traer al hijo de éste desde México. Forzados a tomar rutas alternas en su camino a Texas, la extraña dupla enfrenta un viaje inesperadamente desafiante, durante el cual el desencantado jinete encuentra conexiones sorpresivas y su propia redención",
+		"code": "510MOK",
+		"price": 285.0,
+		"status": true,
+		"stock": 451,
+		"category": "Aventura",
+		"thumbnails": [
+			"https://i.ibb.co/1JQNz57/1115656615-2p.jpg",
+			"https://i.ibb.co/bJjrRw7/1115656615-1p.jpg",
+			"https://i.ibb.co/kHqktCd/1115656615.jpg"
+		]
+	},
+	{
+		"id": 25,
+		"title": "Paw Patrol: la película",
+		"description": "Ryder y los cachorros son llamados a Adventure City para evitar que el alcalde Humdinger convierta la bulliciosa metrópolis en un estado de caos",
+		"code": "481BBB",
+		"price": 345.0,
+		"status": true,
+		"stock": 128,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/qW5CmLC/1113931139-2p-jpg.jpg",
+			"https://i.ibb.co/xgCwty4/1113931139-1p.jpg",
+			"https://i.ibb.co/tc2Cns2/1113931139.jpg"
+		]
+	},
+	{
+		"id": 26,
+		"title": "Sing 2 ven y canta de nuevo",
+		"description": "Buster Moon y sus amigos deben persuadir a la solitaria estrella de rock Clay Calloway para que se una a ellos para la inauguración de un nuevo espectáculo",
+		"code": "603EHK",
+		"price": 290.0,
+		"status": true,
+		"stock": 456,
+		"category": "Familiar",
+		"thumbnails": [
+			"https://i.ibb.co/rcjyMPs/1118486796-2p.jpg",
+			"https://i.ibb.co/2M56svM/1118486796-1p.jpg",
+			"https://i.ibb.co/6Hkvs94/1118486796.jpg"
+		]
+	},
+	{
+		"id": 27,
+		"title": "Liga de la Justicia de Zack Snyder",
+		"description": "La Liga de la Justicia de Zack Snyder​​, comúnmente conocida como «Snyder Cut», es una versión del director de la película estadounidense de superhéroes del mismo nombre de 2017, la quinta película del Universo extendido de DC y basada en el equipo de superhéroes del mismo nombre de DC Comics",
+		"code": "561GGY",
+		"price": 284.0,
+		"status": true,
+		"stock": 269,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/KFbPKSH/1109592605-2p.jpg",
+			"https://i.ibb.co/YbzH3hL/1109592605-1p.jpg",
+			"https://i.ibb.co/G0hVyw2/1109592605.jpg"
+		]
+	},
+	{
+		"id": 28,
+		"title": "Toy Story 4",
+		"description": "Woody siempre ha estado seguro acerca de su lugar en el mundo, y que su prioridad es cuidar a su niño, ya sea Andy o Bonnie. Pero cuando Bonnie suma un reacio nuevo juguete a su cuarto, llamado Forky, un viaje junto con los viejos y nuevos amigos le enseñará a Woody cuán grande puede ser el mundo para un juguete",
+		"code": "994DIW",
+		"price": 284.0,
+		"status": true,
+		"stock": 236,
+		"category": "Infantiles",
+		"thumbnails": [
+			"https://i.ibb.co/vvg2q0W/1087011832-1p.jpg",
+			"https://i.ibb.co/tht8ckQ/1087011832.jpg"
+		]
+	},
+	{
+		"id": 29,
+		"title": "Matrix resurecciones",
+		"description": "De la franquicia revolucionaria que redefinió el género: Matrix resurrecciones, dirigida por la cineasta visionaria, Lana Wachowski. La nueva película reúne a los protagonistas originales, Keanu Reeves y Carrie-Anne Moss, en sus roles icónicos de Neo y Trinity, a quienes ellos hicieron famosos",
+		"code": "978NDN",
+		"price": 285.0,
+		"status": true,
+		"stock": 289,
+		"category": "Accion",
+		"thumbnails": [
+			"https://i.ibb.co/txJ4bdh/1118486664-2p.jpg",
+			"https://i.ibb.co/1XZNt2g/1118486664-1p.jpg",
+			"https://i.ibb.co/mtDmdSh/1118486664.jpg"
+		]
+	},
+	{
+		"id": 30,
+		"title": "Box set Mi Villano Favorito",
+		"description": "¡Las 4 exitosas películas de la franquicia de mi villano favorito disponibles en una sola colección! incluye las cuatro comedias que rompieron todos los récords: mi villano favorito, mi villano favorito 2 , minions y mi villano favorito 3. divierte con gru, los traviesos minions y el resto de tus personajes favoritos. ¡no te pierdas esta increíble colección que fascinará a toda la familia!.",
+		"code": "008UDG",
+		"price": 520.0,
+		"status": true,
+		"stock": 365,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/pXCfmWb/1122828057-20p.jpg",
+			"https://i.ibb.co/0y97GGS/1122828057-1p.jpg",
+			"https://i.ibb.co/h918hrW/1122828057.jpg"
+		]
+	},
+	{
+		"id": 31,
+		"title": "Box set Jurassic World",
+		"description": "Jurassic World: colección de 5 películas ¡Celebra una de las mayores franquicias cinematográficas de todos los tiempos! con la colección de 5 películas de Jurassic World! del director ganador del premio de la academia Steven Spielberg (Jurassic Park, The Lost World: Jurassic Park), Joe Johnston (Jurassic Park iii), Colin Trevorrow (Jurassic World) y J. A. Bayona (Jurassic World: Fallen Kingdom), los dinosaurios vagan una vez más la tierra en un increíble parque temático en una isla remota. Las aventuras llenas de acción enfrentan al hombre contra depredadores prehistóricos en la última batalla por la supervivencia. Con imágenes visualmente deslumbrantes y un cine innovador, estas películas épicas son pura magia cinematográfica que tardó 65 millones de años en realizarse. Bienvenido a mundo jurásico\n\n",
+		"code": "729CWA",
+		"price": 699.0,
+		"status": true,
+		"stock": 456,
+		"category": "Ciencia ficción",
+		"thumbnails": [
+			"https://i.ibb.co/QYxTdZn/1122197880-4p.jpg",
+			"https://i.ibb.co/7YbWVrJ/1122197880-3p.jpg",
+			"https://i.ibb.co/3WGSy8d/1122197880-2p.jpg",
+			"https://i.ibb.co/74LJxsf/1122197880-1p.jpg",
+			"https://i.ibb.co/7tSsZCb/1122197880.jpg"
+		]
+	},
+	{
+		"id": 32,
+		"title": "La Bella y la Bestia",
+		"description": "Un día el padre de Bella se pierde en el camino y acaba en un viejo y misterioso castillo. Buscando cobijo y un lugar donde pasar la noche, descubre que el señor de ese castillo es una horrible Bestia. Cuando Bestia se percata de su presencia, lo deja encerrado entre rejas y Bella se ofrece a intercambiarse con su padre, quedando recluida en el castillo",
+		"code": "965GIQ",
+		"price": 379.0,
+		"status": true,
+		"stock": 256,
+		"category": "Musical",
+		"thumbnails": [
+			"https://i.ibb.co/4TRk9w6/1058748222.jpg"
+		]
+	},
+	{
+		"id": 33,
+		"title": "Game of Thrones: Octava Temporada",
+		"description": "La lucha culminante, en la que el Ejército de los Muertos se enfrentará a las fuerzas combinadas de la humanidad, tendrá lugar en Winterfell, donde comenzó toda la historia y, además, contará con el mayor número de personajes de Game of Thrones que se han visto en el mismo lugar",
+		"code": "993GKJ",
+		"price": 528.0,
+		"status": true,
+		"stock": 456,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/Rpf5tMs/1091288270-1p.jpg",
+			"https://i.ibb.co/dcH5kW8/1091288270.jpg"
+		]
+	},
+	{
+		"id": 34,
+		"title": "Colección 50 Clásicos de Disney",
+		"description": "Revive la mágia con esta colección de 50 DVD de tus películas favoritas del maravilloso mundo de Disney",
+		"code": "353JJP",
+		"price": 4979.0,
+		"status": true,
+		"stock": 264,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/JqyLTNt/1056586942-1p.jpg",
+			"https://i.ibb.co/k9Nkt0r/1056586942-3p.jpg",
+			"https://i.ibb.co/v354MTN/1056586942.jpg"
+		]
+	},
+	{
+		"id": 35,
+		"title": "Batman Forever",
+		"description": "Batman debe luchar contra el ex fiscal de distrito Harvey Dent, quien ahora es dos caras y Edward Nygma, Acertijo con la ayuda de un psicólogo amoroso y un joven acróbata de circo que se convierte en su compañero, Robin",
+		"code": "911COB",
+		"price": 642.0,
+		"status": true,
+		"stock": 450,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/wSYDQjV/1100589431-1p.jpg",
+			"https://i.ibb.co/HgvN7ny/1100589431.jpg"
+		]
+	},
+	{
+		"id": 36,
+		"title": "Sin tiempo para morir",
+		"description": "Daniel Craig regresa una vez mas como James Bond, protagonizando junto al ganador del Oscar Rami Malek, No Time To Die. Bond ha dejado el servicio activo y disfruta de una vida tranquila en Jamaica. Su paz es efímera cuando su viejo amigo Félix Leiter de la CIA aparece pidiendo ayuda. La misión de rescatar a un científico secuestrado resulta ser mucho más traicionera de lo esperado, llevando a Bond a la pista de un misterioso villano armado con nueva tecnología peligrosa",
+		"code": "533XMN",
+		"price": 240.0,
+		"status": true,
+		"stock": 126,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/hX6wp2p/1115656623-20p.jpg",
+			"https://i.ibb.co/GFFt5dP/1115656623-1p.jpg",
+			"https://i.ibb.co/pX8ZGP8/1115656623.jpg"
+		]
+	},
+	{
+		"id": 37,
+		"title": "Game of Thrones: La Serie Completa",
+		"description": "Game of Thrones trata de las luchas de poder entre las 7 casas del continente de Westeros, donde cada una domina una porción junto a sus vasallos y están regidos por el ocupante del trono de hierro. La historia comienza cuando la mano del rey, título que es otorgado por el rey a uno de sus vasallos y que conlleva convertirse en el segundo hombre más poderoso de los siete reinos, así como ser la justicia del rey y el comandante de sus ejércitos, muere de manera repentina. Empezará entonces una escalada de violencia y conspiraciones para hacerse con el control de los siete reinos. Para terminar, recomendar su visionado así como la lectura de los libros ya que es una historia realmente intensa. Veamos algunas de las casas que forman el reino",
+		"code": "914NPL",
+		"price": 3162.0,
+		"status": true,
+		"stock": 258,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/x5QFDXc/1091287711-1p.jpg",
+			"https://i.ibb.co/VVZ17wc/1091287711.jpg"
+		]
+	},
+	{
+		"id": 38,
+		"title": "Madagascar Box set",
+		"description": "Prepárate para la escandalosa aventura de los animales del zoológico que se perdieron en la naturaleza en Madagascar. Únete al rey Alex, al bromista Marty, al nervioso Melman y a la luchadora Gloria mientras viajan por el mundo en busca de su verdadero hábitat. Esta colección inolvidable incluye las 3 películas de Madagascar",
+		"code": "144IHE",
+		"price": 439.0,
+		"status": true,
+		"stock": 145,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/WvB82F1/1117301741-3p.jpg",
+			"https://i.ibb.co/4W8f4Z0/1117301741-2p.jpg",
+			"https://i.ibb.co/kxrJ0R4/1117301741-1p.jpg",
+			"https://i.ibb.co/tCD0gmP/1117301741.jpg"
+		]
+	},
+	{
+		"id": 39,
+		"title": "La Sociedad de la Justicia de America: Segunda Guerra Mundial",
+		"description": "Sociedad de la justicia: segunda guerra mundial Barry Allen de hoy, antes de fundar la liga de la justicia, descubre que puede correr incluso más rápido de lo que imaginaba, y este hito lo lleva a su primer encuentro con speed force. flash se lanza instantáneamente en medio de una batalla furiosa, principalmente entre nazis y un equipo de superhéroes de la edad de oro conocido como The Justice Society of America, Liderado por Wonder Woman, el grupo incluye a Hourman, Black canary, Hawkman, Steve Trevor y Jay Garrick, The golden age Flash. Flash se ofrece rápidamente como voluntario para ayudar a sus compañeros héroes a cambiar la balanza de la guerra a su favor mientras el equipo intenta descubrir cómo enviarlo a casa. pero no será fácil ya que las complicaciones y las emociones están arraigadas en este thriller de la segunda guerra mundial",
+		"code": "385RCG",
+		"price": 285.0,
+		"status": true,
+		"stock": 258,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/52XKpCT/1105416390-2p.jpg",
+			"https://i.ibb.co/hmfjwKB/1105416390-1p.jpg",
+			"https://i.ibb.co/VQFRZ7H/1105416390.jpg"
+		]
+	},
+	{
+		"id": 40,
+		"title": "Box set Coleccion Rápidos y Furiosos",
+		"description": "Boxset rápidos y furiosos. Colección de 9 películas: rápido y furioso, + rápido mas furioso, rápido y furioso: reto Tokio, rápidos y furiosos, rápidos y furiosos 5in control, rápidos y furiosos 6, rápidos y furiosos 7, rápidos y furiosos 8, rápidos y furiosos 9\n",
+		"code": "990QLB",
+		"price": 1205.0,
+		"status": true,
+		"stock": 278,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/9gc357p/1111536453-2p.jpg",
+			"https://i.ibb.co/nPJ7qwg/1111536453-1p.jpg",
+			"https://i.ibb.co/s9ZBdRk/1111536453.jpg"
+		]
+	},
+	{
+		"id": 41,
+		"title": "Spider-Man: Lejos de Casa",
+		"description": "Después de los eventos de Avengers: Endgame, Peter Parker (Tom Holland) regresa en Spider-Man: lejos de casa. El súper héroe más amistoso del vecindario decide acompañar a sus mejores amigos Ned, MJ y el resto de la pandilla en unas vacaciones por Europa. Pero Peter rápidamente olvida su plan de descansar del súper heroísmo por unas semanas, cuando acepta ayudar a Nick Fury (Samuel l. Jackson) de mala gana descifrando el misterio de varios ataques de monstruos con el poder de los elementos. Spider-Man y Mysterio (Jake Gyllenhaal) unen fuerzas para combatir el caos desatado por todo el continente en esta aventura donde no todo es todo lo que parece",
+		"code": "387BCL",
+		"price": 335.0,
+		"status": true,
+		"stock": 357,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/7CSSkyx/1090889989.jpg"
+		]
+	},
+	{
+		"id": 42,
+		"title": "Los Picapiedra serie completa",
+		"description": "The Flinstones: La Serie Completa. Yabba Dabba Doo ¡No dejes pasar esto! The Flintstones, es diversión del tamaño de una roca para toda la familia. Los fanáticos de todas las edades se reirán de las desventuras de los Picapiedra y los Marmol, quienes constantemente se encuentran atrapados entre la espada y la pared. Desde la edad de piedra, The Flintstones ha brindado entretenimiento que nunca falla para deleitar a cada nueva generación. Y ahora los 166 episodios están disponibles, por primera vez, en alta definición. Así que prepárese para la primera serie de televisión animada en horario estelar y celebre 60 años de historia en desarrollo",
+		"code": "685EBC",
+		"price": 1299.0,
+		"status": true,
+		"stock": 265,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/WfLsyt1/1115656828-2p.jpg",
+			"https://i.ibb.co/NnF2xLc/1115656828-1p.jpg",
+			"https://i.ibb.co/J5bsLrH/1115656828.jpg"
+		]
+	},
+	{
+		"id": 43,
+		"title": "Box Set: El Padrino trilogia",
+		"description": "Boxset: El Padrino la saga criminal multi-generacional ampliamente considerada como una de las mejores películas de todos los tiempos, este drama de la mafia, basado en la novela homónima de Mario Puzo, se centra en la poderosa familia de criminales italoestadounidense de Don Vito Corleone (Marlon Brando). Cuando el hijo menor del don, Michael (Al Pacino), se une de mala gana a la mafia, se ve envuelto en el inevitable ciclo de violencia y traición. Aunque Michael trata de mantener una relación normal con su esposa, Kay (Diane Keaton), se ve involucrado más profundamente en el negocio familiar. Contiene EL Padrino (1972), El Padrino II (1974) y El Padrino III (1990)",
+		"code": "661FYC",
+		"price": 799.0,
+		"status": true,
+		"stock": 249,
+		"category": "Cine de arte",
+		"thumbnails": [
+			"https://i.ibb.co/qxmTFJB/1124629353-2p.jpg",
+			"https://i.ibb.co/0ZB5tmf/1124629353-1p.jpg",
+			"https://i.ibb.co/dK32FS8/1124629353.jpg"
+		]
+	},
+	{
+		"id": 44,
+		"title": "Serie completa F.R.I.E.N.D.S",
+		"description": "Una gran pandilla de grandes amigos, que viven en la zona de Manhathan y que se reúnen en su departamento o en su bar habitual en central park, disfrutando de sus grandes cambios en su vida y en su amistad",
+		"code": "104JKJ",
+		"price": 2411.0,
+		"status": true,
+		"stock": 362,
+		"category": "Comedia",
+		"thumbnails": [
+			"https://i.ibb.co/svSCxy0/1101465809-1p.jpg",
+			"https://i.ibb.co/DzhG8BQ/1101465809.jpg"
+		]
+	},
+	{
+		"id": 45,
+		"title": "Bob Esponja al rescate",
+		"description": "Bob esponja y Patricio viaja a la ciudad pérdida de Atlantic City para resolver el misterioso secuestro de Gary el caracol",
+		"code": "013WXS",
+		"price": 210.0,
+		"status": true,
+		"stock": 245,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/pRjwYHj/1112630747-2p-jpg.jpg",
+			"https://i.ibb.co/fSK4QFd/1112630747-1p.jpg",
+			"https://i.ibb.co/F7gB8kx/1112630747.jpg"
+		]
+	},
+	{
+		"id": 46,
+		"title": "Downton Abbey: Una nueva era",
+		"description": "Seguimiento del largometraje de 2019 en el que la familia Crawley y el personal de Downton recibieron la visita real del Rey y la Reina de Gran Bretaña",
+		"code": "349OZK",
+		"price": 285.0,
+		"status": true,
+		"stock": 256,
+		"category": "Familiar",
+		"thumbnails": [
+			"https://i.ibb.co/QrTdCZ9/1124609328-1p.jpg",
+			"https://i.ibb.co/kHB5RV2/1124609328.jpg"
+		]
+	},
+	{
+		"id": 47,
+		"title": "Batman animated",
+		"description": "Boxset Batman animated incluye las mejores películas animadas basadas en la magistral novela gráfica, consideradas las mejores historias de Batman de todos los tiempos. Con la aparición de algunos de los personajes más destacados de DC, como Superman, Nightwing, Gatúbela, Hiedra venenosa, el Guasón y muchos más. Disfruta de toda la diversión, historias de asesinatos, misterio y romance que darán lugar a nuevas e inusuales alianzas y revelarán secretos devastadores",
+		"code": "289REJ",
+		"price": 749.0,
+		"status": true,
+		"stock": 258,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/mNCpmw2/1118487121-2p.jpg",
+			"https://i.ibb.co/PCTGhTj/1118487121-1p.jpg",
+			"https://i.ibb.co/ZM5cdh0/1118487121.jpg"
+		]
+	},
+	{
+		"id": 48,
+		"title": "Clásicos Live Action",
+		"description": "Por primera vez en México, el legado de Walt Disney se podrá revivir a través de la magia de los 7 clásicos Disney en live action, La Bella y la Bestia, El Libro de la Selva, La Cenicienta, Alicia en el País de las Maravillas, Dumbo, El Rey León y Aladdin Las películas que han llenado de magia, aventura, diversión y emoción, ahora están disponibles en BLU-RAY a través de una edición de colección",
+		"code": "159TDO",
+		"price": 1023.0,
+		"status": true,
+		"stock": 789,
+		"category": "Infantiles",
+		"thumbnails": [
+			"https://i.ibb.co/GH8y6NV/1100074733-2p.jpg",
+			"https://i.ibb.co/hs8VTHQ/1100074733-1p.jpg",
+			"https://i.ibb.co/pfyJYG9/1100074733.jpg"
+		]
+	},
+	{
+		"id": 49,
+		"title": "Box set Kung Fu Panda",
+		"description": "Ahora conocido como el Dragón Guerrero, Po protege el Valle de la Paz junto con sus amigos y compañeros maestros de kung fu, los cinco furiosos. Sin embargo, un peligroso villano amenaza la nueva e impresionante vida de Po con planes para usar un arma secreta para desaparecer el arte marcial y conquistar China. Con el fin de derrotar a su nuevo enemigo, Po tiene que recordar su pasado y desbloquear secretos de sus misteriosos orígenes",
+		"code": "346KRE",
+		"price": 377.0,
+		"status": true,
+		"stock": 269,
+		"category": "Aventura",
+		"thumbnails": [
+			"https://i.ibb.co/Jd7S1sv/1108626531-2p-jpg.jpg",
+			"https://i.ibb.co/BnrrB5t/1108626531-1p-jpg.jpg",
+			"https://i.ibb.co/BTCp32j/1108626531-jpg.jpg"
+		]
+	},
+	{
+		"id": 50,
+		"title": "Aladdín",
+		"description": "Rodeada por los siete desiertos, se encuentra la ciudad de Agrabah, una metrópoli de calles estrechas y plagadas de gente, donde en lo más alto puede verse el majestuoso castillo del Sultán. Allí vive la joven princesa Jasmine (Naomi Scott) junto con su padre el Sultán (Navid Negahban) y el visir real Jafar (Marwan Kenzari)",
+		"code": "133PSX",
+		"price": 270.0,
+		"status": true,
+		"stock": 234,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/yfMMB1S/1086947320-1p.jpg",
+			"https://i.ibb.co/5WJ94wm/1086947320.jpg"
+		]
+	},
+	{
+		"id": 51,
+		"title": "Huérfanos de Brooklyn",
+		"description": "Nueva York. Años 50. Lionel Essrog es un solitario detective privado con una extraña peculiaridad: padece el síndrome de Tourette, patología caracterizada por tener múltiples tics físicos y vocales, y a menudo está asociada con la exclamación de palabras obscenas y comentarios socialmente inapropiados, se aventura a intentar resolver el asesinato de su mentor y único amigo, Frank Minna",
+		"code": "276QKW",
+		"price": 285.0,
+		"status": true,
+		"stock": 128,
+		"category": "Drama",
+		"thumbnails": [
+			"https://i.ibb.co/717VhDQ/1094812140-1p.jpg",
+			"https://i.ibb.co/pjrWfC3/1094812140.jpg"
+		]
+	},
+	{
+		"id": 52,
+		"title": "El escuadrón Suicida 2",
+		"description": "Los supervillanos Harley Quinn, Bloodsport, Peacemaker y una colección de estafadores locos en la prisión de Belle Reve se unen al súper secreto y sombrío Task Force X cuando los dejan en la remota isla de Corto Maltese, infundida por enemigos",
+		"code": "502LPG",
+		"price": 345.0,
+		"status": true,
+		"stock": 365,
+		"category": "Acción",
+		"thumbnails": [
+			"https://i.ibb.co/71gP07g/1113926127-2p-jpg.jpg",
+			"https://i.ibb.co/0MCBK4h/1113926127-1p.jpg",
+			"https://i.ibb.co/DpVsYBQ/1113926127.jpg"
+		]
+	},
+	{
+		"id": 53,
+		"title": "Los Locos Addams 2 ",
+		"description": "La espeluznante familia favorita de todos regresa en la nueva secuela de comedia animada: Los Locos Addams 2. En esta nueva entrega veremos a Morticia y Homero angustiados por que sus hijos están creciendo, no quieren ir a comidas familiares, y están totalmente consumidos por la “edad de los gritos”. Para recuperar su vínculo, deciden empacar a Merlina, Pericles, al Tío Lucas y al resto de los Addams en su carroza embrujada y emprender un viaje en carretera para tener unas últimas y miserables vacaciones familiares. Su aventura a través de Estados Unidos los sacará de su rutina y les traerá divertidos encuentros con el icónico Tío Cosa, y con muchos nuevos y excéntricos personajes. Al final de cuentas ¿Qué podría salir mal?",
+		"code": "297JQF",
+		"price": 345,
+		"status": true,
+		"stock": 245,
+		"category": "Animada",
+		"thumbnails": [
+			"https://i.ibb.co/64mtPB3/1115656593-2p.jpg",
+			"https://i.ibb.co/Nnstt8J/1115656593-1p.jpg",
+			"https://i.ibb.co/GJ2qVqv/1115656593.jpg"
+		]
+	}
+]

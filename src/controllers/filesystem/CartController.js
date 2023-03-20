@@ -1,7 +1,7 @@
-const CartManager = require('./../helpers/CartManager')
-const ProductManager = require('./../helpers/ProductManager')
-const pathCarts = './src/datastorage/carts.json'
-const pathProducts = './src/datastorage/products.json'
+const CartManager = require('../../dao/filesystem/helpers/CartManager') //./../helpers/CartManager
+const ProductManager = require('../../dao/filesystem/helpers/ProductManager') //./../helpers/ProductManager
+const pathCarts = './src/dao/filesystem/datastorage/carts.json'
+const pathProducts = './src/dao/filesystem/datastorage/products.json'
 
 // Get a cart from server
 const getProductsCartFromServer = async (req, res) => {
